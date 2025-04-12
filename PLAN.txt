@@ -1,0 +1,8 @@
+Do zrobienia jest
+- baza haseł, 25 każdy poziom easy mid hard
+- tryb gry na czas i ilość
+- implementacja zasad gry???
+- statystyka wygranych (pewnie chodzi o ilość punktów, tzn trafien i nie trafien?, myslalem 
+żeby to zrobić po prostu na zasadzie ze kazda litera/cyfra poprawna to 1 punkt a nie trafiona to 0
+- statystyka bledow, to chyba się laczy z powyższym podpunktem
+- zaproponowana przez grupe ???? to najmniej ważne cos się na koniec wymysli
