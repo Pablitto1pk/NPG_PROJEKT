@@ -3,4 +3,11 @@ project(repo_github)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(repo_github main.cpp)
+include_directories(include)
+
+add_executable(
+        repo_github main.cpp
+        include/memory.hpp
+        src/memory.cpp
+
+)
