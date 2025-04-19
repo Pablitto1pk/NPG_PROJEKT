@@ -1,5 +1,5 @@
-C:/Users/Igor/Desktop/AGH_NPG/kurst-qt/cmake-build-debug/CMakeFiles/kurst_qt.dir
-C:/Users/Igor/Desktop/AGH_NPG/kurst-qt/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Igor/Desktop/AGH_NPG/kurst-qt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Igor/Desktop/AGH_NPG/kurst-qt/cmake-build-debug/CMakeFiles/kurst_qt_autogen_timestamp_deps.dir
-C:/Users/Igor/Desktop/AGH_NPG/kurst-qt/cmake-build-debug/CMakeFiles/kurst_qt_autogen.dir
+C:/Users/Faust/Documents/repo/memory-slowne-npg/cmake-build-debug/CMakeFiles/kurst_qt.dir
+C:/Users/Faust/Documents/repo/memory-slowne-npg/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Faust/Documents/repo/memory-slowne-npg/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Faust/Documents/repo/memory-slowne-npg/cmake-build-debug/CMakeFiles/kurst_qt_autogen_timestamp_deps.dir
+C:/Users/Faust/Documents/repo/memory-slowne-npg/cmake-build-debug/CMakeFiles/kurst_qt_autogen.dir

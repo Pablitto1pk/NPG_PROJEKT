@@ -172,12 +172,12 @@
 			[
 				{
 					"backtrace" : 15,
-					"path" : "C:/Users/Igor/Desktop/AGH_NPG/kurst-qt/include"
+					"path" : "C:/Users/Faust/Documents/repo/memory-slowne-npg/include"
 				},
 				{
 					"backtrace" : 0,
 					"isSystem" : true,
-					"path" : "C:/Users/Igor/Desktop/AGH_NPG/kurst-qt/cmake-build-debug/kurst_qt_autogen/include"
+					"path" : "C:/Users/Faust/Documents/repo/memory-slowne-npg/cmake-build-debug/kurst_qt_autogen/include"
 				},
 				{
 					"backtrace" : 2,

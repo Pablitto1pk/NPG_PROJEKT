@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\kurst_qt.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\ar.exe qc CMakeFiles\kurst_qt.dir/objects.a @CMakeFiles\kurst_qt.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\kurst_qt.dir/objects.a -Wl,--no-whole-archive -o kurst_qt.exe -Wl,--out-implib,libkurst_qt.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\kurst_qt.dir\linkLibs.rsp

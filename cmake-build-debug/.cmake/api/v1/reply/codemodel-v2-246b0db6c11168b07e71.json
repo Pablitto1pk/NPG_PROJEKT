@@ -43,7 +43,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "kurst_qt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-kurst_qt-Debug-34c438dcc911d415cf0f.json",
+					"jsonFile" : "target-kurst_qt-Debug-b66ea8e2ae9a0032ed9b.json",
 					"name" : "kurst_qt",
 					"projectIndex" : 0
 				},
@@ -67,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Igor/Desktop/AGH_NPG/kurst-qt/cmake-build-debug",
-		"source" : "C:/Users/Igor/Desktop/AGH_NPG/kurst-qt"
+		"build" : "C:/Users/Faust/Documents/repo/memory-slowne-npg/cmake-build-debug",
+		"source" : "C:/Users/Faust/Documents/repo/memory-slowne-npg"
 	},
 	"version" : 
 	{
