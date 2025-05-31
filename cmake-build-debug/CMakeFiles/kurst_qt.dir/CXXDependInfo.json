@@ -1,0 +1,27 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/janek/OneDrive/Pulpit/NPG/memory-slowne-npg/cmake-build-debug",
+	"dir-cur-src" : "C:/Users/janek/OneDrive/Pulpit/NPG/memory-slowne-npg",
+	"dir-top-bld" : "C:/Users/janek/OneDrive/Pulpit/NPG/memory-slowne-npg/cmake-build-debug",
+	"dir-top-src" : "C:/Users/janek/OneDrive/Pulpit/NPG/memory-slowne-npg",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\janek\\OneDrive\\Pulpit\\NPG\\memory-slowne-npg\\include",
+		"kurst_qt_autogen\\include",
+		"C:\\Qt\\6.9.0\\mingw_64\\include\\QtCore",
+		"C:\\Qt\\6.9.0\\mingw_64\\include",
+		"C:\\Qt\\6.9.0\\mingw_64\\mkspecs\\win32-g++",
+		"C:\\Qt\\6.9.0\\mingw_64\\include\\QtGui",
+		"C:\\Qt\\6.9.0\\mingw_64\\include\\QtWidgets"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/janek/OneDrive/Pulpit/NPG/memory-slowne-npg/cmake-build-debug/CMakeFiles/kurst_qt.dir"
+}

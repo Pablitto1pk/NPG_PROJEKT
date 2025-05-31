@@ -1,0 +1,7 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/kurst_qt.dir/main.cpp.obj: dyndep
+
+build CMakeFiles/kurst_qt.dir/src/UI.cpp.obj: dyndep
+
+build CMakeFiles/kurst_qt.dir/src/memory.cpp.obj: dyndep
+

@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/kurst_qt.dir/src/UI.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}
