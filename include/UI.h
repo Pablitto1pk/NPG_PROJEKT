@@ -27,6 +27,13 @@ private:
     //etap drugi
     QLabel *wordLabel; // Tu bedzie losowane haslo
     QLineEdit *inputField; // pole do wpisywania hasła
+    //gra na zycia
+    QLabel *livesLabel;
+    QPushButton *submitButton;
+
+    QString currentPassword; // przechowuje aktualne hasło do porównania
+    void handleSubmission(); // metoda do obsługi sprawdzenia hasła
+    void endGame(); // kończy grę
 };
 
 #endif //UI_H

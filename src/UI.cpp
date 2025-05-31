@@ -4,6 +4,7 @@
 #include <QVBoxLayout>
 #include <QLabel>
 #include <QPushButton>
+#include <QTimer>
 
 
 MyWindow::MyWindow(QWidget *parent)
@@ -55,7 +56,16 @@ MyWindow::MyWindow(QWidget *parent)
 
     wordLabel->hide(); // wstepne ukrycie etapu drugiego
     inputField->hide();
-    //
+    //zycia
+    submitButton = new QPushButton("Sprawdź");
+    submitButton->setStyleSheet("background-color: #28a745; color: white; font-size: 16px;");
+    submitButton->setFixedHeight(40);
+    submitButton->hide();
+
+    livesLabel = new QLabel("Życia: 3");
+    livesLabel->setStyleSheet("color: white; font-size: 18px;");
+    livesLabel->setAlignment(Qt::AlignCenter);
+    livesLabel->hide();
 
     // Głowny layout strony tytul i podlayout z guzikami
     QVBoxLayout *mainLayout = new QVBoxLayout;
@@ -68,7 +78,9 @@ MyWindow::MyWindow(QWidget *parent)
     mainLayout->addSpacing(30);
     mainLayout->addWidget(wordLabel);
     mainLayout->addWidget(inputField);
-    //
+    //zycia
+    mainLayout->addWidget(livesLabel);
+    mainLayout->addWidget(submitButton);
 
     connect(button_easy, &QPushButton::clicked, this, [this]() {
     startGame(0);
@@ -81,6 +93,7 @@ MyWindow::MyWindow(QWidget *parent)
     });
 
     setLayout(mainLayout); // ustawia layout
+    connect(submitButton, &QPushButton::clicked, this, &MyWindow::handleSubmission);
     setWindowTitle("Gra memory"); // tytul okna z grą
 }
 
@@ -99,6 +112,52 @@ void MyWindow::startGame(const int poziom) // int bo moja klasa obsluguje 0,1,2
     wordLabel->setText("Zapamiętaj hasło: " + qhaslo);
 
     // Pokaż elementy etapu 2
+    currentPassword = qhaslo;
+    Game.reset_lives();
+    livesLabel->setText("Życia: 3");
+
     wordLabel->show();
     inputField->show();
+    livesLabel->show();
+    submitButton->show();
+
+    QTimer::singleShot(3000, this, [this]() {
+        wordLabel->setText("Wpisz hasło:");
+    });
 }
+
+void MyWindow::handleSubmission() {
+    QString input = inputField->text();
+
+    if (input.toLower() == currentPassword.toLower()) {
+        wordLabel->setText("Brawo! Dobre hasło.");
+        inputField->clear();
+        currentPassword = QString::fromStdString(Game.get_pass());
+        QTimer::singleShot(2000, this, [this]() {
+            wordLabel->setText("Zapamiętaj hasło: " + currentPassword);
+            QTimer::singleShot(3000, this, [this]() {
+                wordLabel->setText("Wpisz hasło:");
+            });
+        });
+    } else {
+        Game.lose_life();
+        int lives = Game.get_lives();
+        livesLabel->setText("Życia: " + QString::number(lives));
+
+        if (Game.is_game_over()) {
+            endGame();
+        } else {
+            wordLabel->setText("Źle! Spróbuj ponownie.");
+            QTimer::singleShot(1500, this, [this]() {
+                wordLabel->setText("Wpisz hasło:");
+            });
+        }
+    }
+}
+
+void MyWindow::endGame() {
+    wordLabel->setText("Koniec gry. Wyczerpałeś wszystkie życia!");
+    inputField->hide();
+    submitButton->hide();
+}
+
